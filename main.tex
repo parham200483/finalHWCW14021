@@ -32,7 +32,17 @@ In this section we describe some vim advanced features :
 \item gUw : in normal mode if you want to switch the word to the right of the cursor to upper case, you use this feature. you type gU2w to upper case two words.
 \item Crtl + A or Crtl + X : in normal mode, when you want to change a number, to increment the number or to decrement the number use can use them, to to increment the number you use Crtl + A and to decrement the you use Crtl + X
 \end{enumerate}
-
+\subsection {Memory profiling}
+\subsubsection {Memory Leak}
+A memory leak is a program error that consists of repeatedly allocating memory, using it, and then neglecting to free it.
+\newline in fact  a memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations. some ways that it might happen are below :
+\begin{enumerate}
+\item{when an object is stored in memory but cannot be accessed by the running code. }
+\item{when a program fails to release memory that it has allocated dynamically.}
+\end{enumerate}
+\subsubsection {Memory profilers}
+Valgrind is a programming tool for memory debugging, memory leak detection, and profiling.\newline Valgrind was originally designed to be a freely licensed memory debugging tool for Linux on x86, but has since evolved to become a generic framework for creating dynamic analysis tools such as checkers and profilers.\newline
+In fact Valgrind is a virtual machine. Nothing from the original program ever gets run directly on the host processor. Instead, Valgrind first translates the program into a temporary, simpler form called intermediate representation (IR). After that a tool is free to do whatever transformations it would like on the IR, before Valgrind translates the IR back into machine code and lets the host processor run it. It also includes a GDB(The GNU Debugger (GDB) is a portable debugger that runs on many Unix-like systems and works for many programming languages) stub to allow debugging of the target program as it runs in Valgrind, with "monitor commands" that allow querying the Valgrind tool for various information.
 \end{document}
 
 
