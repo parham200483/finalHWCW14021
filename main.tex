@@ -1,4 +1,12 @@
-  GNU nano 7.2                        main.tex                        Modified
+\documentclass[titlepage]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\title{ \textbf{final homework of computer workshop} \newline Iran University of science and technology \newline \newline shomare daneshjoii: 402522031}
+\author{Parham Mohammadi }
+\date{1402/11/06}
+
 
 \begin{document}
 \maketitle
@@ -9,13 +17,23 @@
 
 \tableofcontents
 \newpage
-\fancyhead[L]{2}
+\fancyhead[L]{1}
 \fancyhead[R]{}
 \section{Git and Github}
 \subsection{ Repository Initialization and Commits}
-first of all in github we build a repository in our github account. Then we bui>
+first of all in github we build a repository in our github account. Then we build a workflow that contanis main.yml. This workflow compiles the latex file that we put in our repository. This workflow compile it tag by tag, so we have to push every commits by tags and latex file must be pushed section by section.This latex file must include sections for each category of the questions.
 \subsection{ GitHub Actions for LaTeX Compilation}
-At the beggining I thought I have to make a folder named .github and then make >
+At the beggining I thought I have to make a folder named .github and then make a folder named workflow in .github and then make main.yml file in workflow folder and then push it in repository, but i ran it and it didnt work, so I delete it and in Actios in repository I made a workflow that contains main.yml and I copied main.yml in held repository into my workflow and then it worked.
+\section{ Exploration Tasks}
+\subsection{Vim Advanced Features}
+In this section we describe some vim advanced features :
+\begin{enumerate}
+\item Crtl + P : when we are in insert mode, we use vim and write a text , for example you write "printf" , if you want to write it again, you can write p and use Crtl + p and then it shows some words that starts with p and you can chose which of them you want to use.
+\item gUw : in normal mode if you want to switch the word to the right of the cursor to upper case, you use this feature. you type gU2w to upper case two words.
+\item Crtl + A or Crtl + X : in normal mode, when you want to change a number, to increment the number or to decrement the number use can use them, to to increment the number you use Crtl + A and to decrement the you use Crtl + X
+\end{enumerate}
+
 \end{document}
+
 
 
